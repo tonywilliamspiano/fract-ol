@@ -6,7 +6,7 @@
 #    By: awilliam <awilliam@student.42wolfsburg.    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/02/09 11:45:00 by awilliam          #+#    #+#              #
-#    Updated: 2023/02/21 16:23:18 by awilliam         ###   ########.fr        #
+#    Updated: 2023/05/05 17:40:11 by awilliam         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -30,7 +30,7 @@ NAME = fract-ol
 
 all: $(NAME)
 
-$(NAME): $(MLX) $(LIBFT)
+$(NAME): $(MLX) $(LIBFT) $(SRCS)
 	cc $(FLAGS) -o $(NAME) -I $(INCLUDE) -Ofast -L $(LIBFLAGS) $(LIBS) $(SRCS) $(LIBFT) $(PRINTF) $(MLX)
 
 quick: $(MLX) $(LIBFT)

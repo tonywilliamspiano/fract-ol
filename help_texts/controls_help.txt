@@ -1,6 +1,7 @@
 Controls:
 
 * f - Change fractal type
+* ESC - Quit viewer
 
 * Mouse wheel - Zoom in/out
 * w - Increase max iterations

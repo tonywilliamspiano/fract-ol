@@ -1,0 +1,18 @@
+Controls:
+
+* f - Change fractal type
+
+* Mouse wheel - Zoom in/out
+* w - Increase max iterations
+* s - Decrease max iterations
+* Arrow Keys - Move left/right/up/down
+* c - Start / stop background shifter
+* v - Start / stop foreground shifter
+* p - Party mode (WARNING: FLASHING COLORS! Viewer discretion is advised)
+
+* Click (Julia only) - Set Julia Constant
+* Space (Julia only) - Start/stop Julia Constant animation - Look for a fractal you like!
+* 1/2 (Julia only) - Speed up or slow down animation
+* e/r - Change direction of x/y axis
+* 0 - Change directions of both axes
+

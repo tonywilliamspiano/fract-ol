@@ -1,0 +1,6 @@
+Here are some options for the sets:
+
+* Julia presets 1-5: Enter in this format "J 3" or "J 5"
+* Color codes - enter 1 or 2 hex values like this: "M 5ee496" or "J 1d4cb3 25d065"
+	(NOTE - Only accepts lowercase hex values!)
+

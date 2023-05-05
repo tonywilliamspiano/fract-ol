@@ -1,0 +1,6 @@
+Please enter the fractal name on the command line followed by the options. Accepted fractal names: 
+
+* M - Mandelbrot
+* J - Julia
+* B - Burning Ship
+

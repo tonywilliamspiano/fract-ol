@@ -6,7 +6,7 @@
 #    By: awilliam <awilliam@student.42wolfsburg.    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/12/14 19:36:10 by awilliam          #+#    #+#              #
-#    Updated: 2023/02/21 10:38:50 by awilliam         ###   ########.fr        #
+#    Updated: 2023/05/05 17:44:33 by awilliam         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -32,7 +32,7 @@ CC = gcc
 CFLAGS = -Wall -Wextra -Werror
 
 $(NAME): $(OBJECTS)
-	ar rc $(NAME) $(OBJECTS)
+	@ar rc $(NAME) $(OBJECTS)
 
 all: $(NAME)
 

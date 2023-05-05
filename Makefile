@@ -6,7 +6,7 @@
 #    By: awilliam <awilliam@student.42wolfsburg.    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/02/09 11:45:00 by awilliam          #+#    #+#              #
-#    Updated: 2023/05/05 17:40:11 by awilliam         ###   ########.fr        #
+#    Updated: 2023/05/05 17:44:55 by awilliam         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -26,21 +26,24 @@ LIBFLAGS = /usr/X11/lib -lX11 -lXext
 
 LIBS = libft.a libmlx.a
 
-NAME = fract-ol
+NAME = fractol
 
 all: $(NAME)
 
 $(NAME): $(MLX) $(LIBFT) $(SRCS)
-	cc $(FLAGS) -o $(NAME) -I $(INCLUDE) -Ofast -L $(LIBFLAGS) $(LIBS) $(SRCS) $(LIBFT) $(PRINTF) $(MLX)
+	@cc $(FLAGS) -o $(NAME) -I $(INCLUDE) -Ofast -L $(LIBFLAGS) $(LIBS) $(SRCS) $(LIBFT) $(PRINTF) $(MLX)
+	echo "Compiling fractol..."
 
 quick: $(MLX) $(LIBFT)
-	cc $(FLAGS) -o $(NAME) -I $(INCLUDE) -Ofast -L $(LIBFLAGS) $(LIBS) $(SRCS) $(LIBFT) $(PRINTF) $(MLX)
+	@cc $(FLAGS) -o $(NAME) -I $(INCLUDE) -Ofast -L $(LIBFLAGS) $(LIBS) $(SRCS) $(LIBFT) $(PRINTF) $(MLX)
 	
 $(MLX): minilibx-linux/
-	cd minilibx-linux && make all && mv $(MLX) ../ && make clean
+	@cd minilibx-linux && make all && mv $(MLX) ../ && make clean
+	echo "Compiling MLX..."
 
 $(LIBFT): libft/
-	cd libft/ && make && mv libft.a ../ && make fclean
+	@cd libft/ && make && mv libft.a ../ && make fclean
+	@echo "Compiling libft..."
 
 clean:
 	rm -f *.o
